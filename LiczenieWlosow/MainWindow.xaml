@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Margin="74,66,0,0" TextWrapping="Wrap" Text="Podaj wiek" VerticalAlignment="Top" Width="162"/>
+        <TextBox HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="Podaj powierzchnie glowy" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>
