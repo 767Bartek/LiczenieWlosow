@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
-        <TextBox HorizontalAlignment="Left" Margin="74,66,0,0" TextWrapping="Wrap" Text="Podaj wiek" VerticalAlignment="Top" Width="162"/>
-        <TextBox HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="Podaj powierzchnie glowy" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+        <Button x:Name="Zatwierdz" Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
+        <TextBox x:Name="Powierzchnia" HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="74,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"><Run Text="Podaj "/><Run Language="pl-pl" Text="powierzchnie głowy:"/></TextBlock>
 
     </Grid>
 </Window>
