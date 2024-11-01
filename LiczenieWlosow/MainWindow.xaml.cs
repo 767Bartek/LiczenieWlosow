@@ -18,12 +18,31 @@ namespace LiczenieWlosow
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        private Glowa glowa;
+
         public MainWindow()
         {
             InitializeComponent();
+            glowa = new Glowa(); // Tworzymy instancję klasy Glowa
         }
 
-       
+        private void Zatwierdz_Click(object sender, RoutedEventArgs e)
+        {
+            if (double.TryParse(GestoscWlosow.Text, out double gestosc) &&
+                double.TryParse(ObwodGlowy.Text, out double obwod) &&
+                double.TryParse(WysokoscCzola.Text, out double wysokoscCzola))
+            {
+                glowa.UstawWartosci(gestosc, obwod, wysokoscCzola);
+                double liczbaWlosow = glowa.ObliczLiczbeWlosow();
+
+                MessageBox.Show($"Szacunkowa liczba włosów na głowie: {liczbaWlosow}");
+            }
+            else
+            {
+                MessageBox.Show("Proszę wprowadzić prawidłowe wartości.");
+            }
+        }
     }
 
     public class Glowa
