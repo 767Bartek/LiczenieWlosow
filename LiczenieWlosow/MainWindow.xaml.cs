@@ -43,6 +43,14 @@ namespace LiczenieWlosow
                 MessageBox.Show("Proszę wprowadzić prawidłowe wartości.");
             }
         }
+
+        private void Resetuj_Click(object sender, RoutedEventArgs e)
+        {
+            GestoscWlosow.Text = "";
+            ObwodGlowy.Text = "";
+            WysokoscCzola.Text = "";
+        }
+
     }
 
     public class Glowa

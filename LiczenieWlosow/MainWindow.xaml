@@ -8,13 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
 	<Grid>
 		<Button x:Name="Zatwierdz" Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162" Click="Zatwierdz_Click"/>
-		<TextBox x:Name="WysokoscCzola" HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+		<TextBox x:Name="WysokoscCzola" HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
 		<TextBlock HorizontalAlignment="Left" Margin="74,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Text="Podaj wysokosc czola" RenderTransformOrigin="0.522,-3.039"/>
 		<TextBlock HorizontalAlignment="Left" Margin="74,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="189" Text="Podaj obwod glowy"/>
-		<TextBox x:Name="ObwodGlowy" HorizontalAlignment="Left" Margin="74,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+		<TextBox x:Name="ObwodGlowy" HorizontalAlignment="Left" Margin="74,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
 		<Button x:Name="Resetuj" Content="Resetuj" HorizontalAlignment="Left" Margin="280,296,0,0" VerticalAlignment="Top" Height="54" Width="162" Click="Resetuj_Click"/>
 		<TextBlock HorizontalAlignment="Left" Margin="74,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" RenderTransformOrigin="0.522,-3.039" Text="Podaj gestosc wlosow"/>
-		<TextBox x:Name="GestoscWlosow" HorizontalAlignment="Left" Margin="74,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+		<TextBox x:Name="GestoscWlosow" HorizontalAlignment="Left" Margin="74,130,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
 
 	</Grid>
 </Window>
