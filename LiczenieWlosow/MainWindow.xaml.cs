@@ -10,6 +10,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace LiczenieWlosow
+
+
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,5 +24,27 @@ namespace LiczenieWlosow
         }
 
        
+    }
+
+    public class Glowa
+    {
+        private double gestosc;
+        private double obwod;
+        private double wysokoscCzola;
+
+        public Glowa()
+        {
+            gestosc = 200;
+            obwod = 55;
+            wysokoscCzola = 6;
+        }
+
+        // Metoda ustawiająca wartości pól
+        public void UstawWartosci(double gestosc, double obwod, double wysokoscCzola)
+        {
+            this.gestosc = gestosc;
+            this.obwod = obwod;
+            this.wysokoscCzola = wysokoscCzola;
+        }
     }
 }
