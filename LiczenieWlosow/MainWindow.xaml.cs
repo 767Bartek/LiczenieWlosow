@@ -39,12 +39,18 @@ namespace LiczenieWlosow
             wysokoscCzola = 6;
         }
 
-        // Metoda ustawiająca wartości pól
         public void UstawWartosci(double gestosc, double obwod, double wysokoscCzola)
         {
             this.gestosc = gestosc;
             this.obwod = obwod;
             this.wysokoscCzola = wysokoscCzola;
+        }
+
+        // Metoda obliczająca liczbę włosów
+        public double ObliczLiczbeWlosow()
+        {
+            double powierzchnia = obwod * wysokoscCzola; // Przybliżona powierzchnia na podstawie obwodu i wysokości
+            return gestosc * powierzchnia;
         }
     }
 }
