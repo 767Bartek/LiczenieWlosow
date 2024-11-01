@@ -6,10 +6,13 @@
         xmlns:local="clr-namespace:LiczenieWlosow"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button x:Name="Zatwierdz" Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
-        <TextBox x:Name="Powierzchnia" HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" Margin="74,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189"><Run Text="Podaj "/><Run Language="pl-pl" Text="powierzchnie głowy:"/></TextBlock>
+	<Grid>
+		<Button x:Name="Zatwierdz" Content="Zatwierdz" HorizontalAlignment="Left" Margin="74,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
+		<TextBox x:Name="WysokoscCzola" HorizontalAlignment="Left" Margin="74,183,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+		<TextBlock HorizontalAlignment="Left" Margin="74,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Text="Podaj wysokosc czola"/>
+		<TextBlock HorizontalAlignment="Left" Margin="74,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="189" Text="Podaj obwod glowy"/>
+		<TextBox x:Name="ObwodGlowy" HorizontalAlignment="Left" Margin="74,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="TextBox_TextChanged"/>
+		<Button x:Name="Resetuj" Content="Resetuj" HorizontalAlignment="Left" Margin="280,296,0,0" VerticalAlignment="Top" Height="54" Width="162"/>
 
-    </Grid>
+	</Grid>
 </Window>
