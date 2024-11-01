@@ -36,7 +36,8 @@ namespace LiczenieWlosow
                 glowa.UstawWartosci(gestosc, obwod, wysokoscCzola);
                 double liczbaWlosow = glowa.ObliczLiczbeWlosow();
 
-                MessageBox.Show($"Szacunkowa liczba włosów na głowie: {liczbaWlosow}");
+                double roznicaProcentowa = glowa.ObliczProcentowaRoznica();
+                MessageBox.Show($"Szacunkowa liczba włosów na głowie: {liczbaWlosow}\nRóżnica względem przeciętnej: {roznicaProcentowa:F2}%");
             }
             else
             {
@@ -79,5 +80,14 @@ namespace LiczenieWlosow
             double powierzchnia = obwod * wysokoscCzola; // Przybliżona powierzchnia na podstawie obwodu i wysokości
             return gestosc * powierzchnia;
         }
+
+        private const double PrzecietnaLiczbaWlosow = 100000;
+
+        public double ObliczProcentowaRoznica()
+        {
+            double liczbaWlosow = ObliczLiczbeWlosow();
+            return ((liczbaWlosow - PrzecietnaLiczbaWlosow) / PrzecietnaLiczbaWlosow) * 100;
+        }
+
     }
 }
